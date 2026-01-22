@@ -57,6 +57,7 @@ The project follows a modular and layered architecture:
 System Logs → Shell Script → Python Analyzer → Alerts
 
 📸 *Screenshot 3: Architecture diagram*
+
 <img width="529" height="410" alt="Architecture_diagram" src="https://github.com/user-attachments/assets/b08e1e71-713d-4a51-9a4d-4a762c408073" />
 
 ---
