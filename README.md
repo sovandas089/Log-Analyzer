@@ -7,6 +7,7 @@ In today’s digital environment, cyber attacks such as brute-force attempts, un
 The **Automated Log Analyzer & Alerting System** is a Linux-based security monitoring project developed using **Python and Shell scripting**. The system automatically collects system logs, analyzes them for high-risk security threats, and generates alerts. This project simulates a **real-world SOC / SIEM-style log monitoring workflow**.
 
 📸 *Screenshot 1: Project directory structure*
+<img width="461" height="647" alt="Directory_structure" src="https://github.com/user-attachments/assets/dcc7a675-d4aa-4138-b199-d640e89b5d67" />
 
 ---
 
@@ -21,6 +22,7 @@ The key objectives of this project are:
 * To understand SOC-level log monitoring concepts
 
 📸 *Screenshot 2: Log collection script execution*
+<img width="1920" height="1080" alt="logs_collection" src="https://github.com/user-attachments/assets/b6923ab8-ebc8-4c3e-85df-fc7a739d8bbf" />
 
 ---
 
@@ -55,6 +57,7 @@ The project follows a modular and layered architecture:
 System Logs → Shell Script → Python Analyzer → Alerts
 
 📸 *Screenshot 3: Architecture diagram*
+<img width="529" height="410" alt="Architecture_diagram" src="https://github.com/user-attachments/assets/b08e1e71-713d-4a51-9a4d-4a762c408073" />
 
 ---
 
@@ -75,6 +78,7 @@ System Logs → Shell Script → Python Analyzer → Alerts
 This module uses Shell scripting to collect system and authentication logs from `/var/log`. The collected logs are copied into the project directory for analysis. Old logs are compressed automatically to manage storage efficiently.
 
 📸 *Screenshot 4: Collected log files in logs directory*
+<img width="1920" height="1080" alt="collected_logs" src="https://github.com/user-attachments/assets/5013b39e-1263-4bc8-99dc-672e51ee0698" />
 
 ---
 
@@ -83,6 +87,8 @@ This module uses Shell scripting to collect system and authentication logs from 
 The log parsing module is implemented in Python. It reads multiple log files, extracts individual log entries, and prepares them for threat analysis. The parser ensures compatibility across different Linux distributions.
 
 📸 *Screenshot 5: Python log parser execution*
+<img width="1920" height="1080" alt="LogParser" src="https://github.com/user-attachments/assets/c8ca4fd2-3612-44bd-9773-92e35a7c3d7a" />
+
 
 ---
 
@@ -100,6 +106,7 @@ This module contains rule-based detection logic to identify high-risk security t
 Each threat is detected by analyzing specific patterns within the log entries.
 
 📸 *Screenshot 6: Threat detection alerts on terminal*
+<img width="1920" height="1080" alt="Screenshot From 2026-01-23 00-00-01" src="https://github.com/user-attachments/assets/b40b75d0-e82e-47aa-b44a-4ae524b7269f" />
 
 ---
 
@@ -108,6 +115,8 @@ Each threat is detected by analyzing specific patterns within the log entries.
 The alerting module generates real-time alerts with timestamps. Alerts are displayed on the terminal and stored in log files for future reference. This simulates SOC alert handling mechanisms.
 
 📸 *Screenshot 7: alerts.log output file*
+<img width="1920" height="1080" alt="ThreatAlert" src="https://github.com/user-attachments/assets/e09c54f9-7eb1-4201-9859-dce467518e74" />
+
 
 ---
 
@@ -129,6 +138,7 @@ The system can successfully detect the following high-risk threats:
 The project includes a scheduler shell script and supports **cron job automation**. This allows the system to run periodically and monitor logs continuously without manual intervention.
 
 📸 *Screenshot 8: Cron job configuration*
+<img width="1920" height="1080" alt="Screenshot From 2026-01-23 00-01-46" src="https://github.com/user-attachments/assets/79ebd1b9-d967-4512-af29-021dddd77f43" />
 
 ---
 
@@ -142,7 +152,8 @@ The system produces the following outputs:
 
 The alerts help in identifying and responding to security incidents quickly.
 
-📸 *Screenshot 9: Final alert output*
+📸 *Screenshot 9: Final report output*
+<img width="1920" height="1080" alt="Screenshot From 2026-01-23 00-07-45" src="https://github.com/user-attachments/assets/5efea7ec-6770-48df-b4dd-91e9270adbea" />
 
 ---
 
@@ -152,7 +163,6 @@ The alerts help in identifying and responding to security incidents quickly.
 * Lightweight and easy to deploy
 * Improves system security visibility
 * Enhances understanding of SOC operations
-* Resume and interview-friendly project
 
 ---
 
